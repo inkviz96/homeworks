@@ -125,4 +125,4 @@ print(gh, fgh)#19
 
 hj = "Data Science"
 print(hj[6:10])#20
-
+#op
