@@ -12,6 +12,7 @@
 j = 'Baloon was red. But i like blue.'
 k = input(': ')
 print(j.find(k))
+print(j.lower().find(k))
 #(2)
 h = len(input())
 g = len(input())

@@ -17,9 +17,9 @@ n = str(input())
 summ = [n]
 
 while n != ' ' :
-    n = str(input())
+    n = input()
     if n == ' ':
-        continue
+        break
     else:
         summ.append(n)
 

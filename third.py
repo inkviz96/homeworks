@@ -26,13 +26,13 @@ else:
     print(f"Ваша скидка: {a}\nК оплате с учетом скидки: {price}")
 
 
-# Дан следующий код:
-# tst = 'abcdef'
-# if len(tst) > 20:
-#     print('string is too long')
-# else:
-#     print('string is too short')
-# Перепишите его с помощью тернарного оператора.
+# # Дан следующий код:
+# # tst = 'abcdef'
+# # if len(tst) > 20:
+# #     print('string is too long')
+# # else:
+# #     print('string is too short')
+# # Перепишите его с помощью тернарного оператора.
 
 tst = 'abcdef'
 t = ('string id too long' if len(tst) > 20 else 'string is too short')
@@ -49,9 +49,11 @@ print(t)
 # Прибавьте к его каждому элементу число 2 и выведите результат в консоль.
 
 tst_12 = [1, 2, 3, 4, 5]
-for i in tst:
+uiu = []
+for i in tst_12:
     i += 2
-    print(i)
+    uiu.append(i)
+print(uiu)
 
 # Даны два целых числа A и B (при этом A ≤ B). Выведите все числа от A до B включительно.
 aA, bB = int(input('First digit: ')), int(input('Second digit: '))
@@ -76,9 +78,11 @@ print(sumi)
 # tst = 1234567
 # Запишите из него в новый список только нечетные элементы.
 tst_1 = list(str(1234567))
+list_new = []
 for i in tst_1:
     if int(i) % 2 == 0:
-         print(i)
+         list_new.append(i)
+print(list_new)
 # Дан список:
 # tst = [7, 1, 2, 5, 0, 3, 9]
 # Найдите сумму элементов этого списка до первого нуля.
