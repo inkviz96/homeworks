@@ -1,5 +1,6 @@
 import random
 
+
 def hang_start():
     words = ['барс', 'АндП', 'АндБ']
     
@@ -21,7 +22,9 @@ def hang_start():
 
         else:
             print("Не угадали!")
+            
             turns -= 1    
+            print(f'У вас {turns} попыток!')
 
         if "_" not in guessed_word:
             print("\nПоздравляем, вы отгадали слово:", ran_choice)
