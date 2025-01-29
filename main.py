@@ -7,12 +7,11 @@ games = {
 if __name__ == "__main__":
     start = True
     while start:
-        try:
-            game_name = input("Choise game: ")
-            games[game_name]()
-            start = input("Choise next game?(Y/N)")
-            if start == "N":
-                start = False
 
-        except KeyError:
-            print("Неверное название игры. Пожалуйста, попробуйте еще раз.")
+        game_name = input("Choise game: ")
+        games[game_name]()
+        start = input("Choise next game?(Y/N)")
+        if start == "N":
+            start = False
+
+

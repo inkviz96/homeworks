@@ -46,6 +46,6 @@ def game_start():
             print("\nПоздравляем! Вы угадали слово:", word)
             break
     else:
-        print("\nВы проиграли! Загаданное слово было:", word)
+        print("Вы проиграли! Загаданное слово было:", word)
 
 game_start()

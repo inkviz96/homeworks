@@ -4,7 +4,7 @@ import random
 
 
 def guess_number_start():
-    print("Угадай число от 1 до 100")
+    print("\nУгадай число от 1 до 100")
     secret_number = random.randint(1, 100)
     attempts = 0
     while True:
@@ -19,7 +19,7 @@ def guess_number_start():
             elif user_guess >  secret_number:
                 print("Загаданное число меньше. Попробуйте еще раз.")
             else:
-                print(f"Супер! Вы угадали число{secret_number} за {attempts} попыток.")
+                print(f"Супер! Вы угадали число {secret_number} за {attempts} попыток.")
                 break
 
         except ValueError:
