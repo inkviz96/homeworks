@@ -3,7 +3,7 @@
 import random
 
 
-def guess_number():
+def guess_number_start():
     print("Угадай число от 1 до 100")
     secret_number = random.randint(1, 100)
     attempts = 0
@@ -26,4 +26,4 @@ def guess_number():
             print("Пожалуйста, введите корректное число.")
 
 
-    guess_number()
+guess_number_start()

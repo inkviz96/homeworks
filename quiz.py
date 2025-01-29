@@ -13,7 +13,7 @@ def display_word(word, guessed_letters):
     return " ".join([letter if letter in guessed_letters else "_" for letter in word])
 
 
-def play_game():
+def game_start():
     print("Добро пожаловать в игру 'Угадай слово'!")
     word = choose_word()
     guessed_letters = set()
@@ -48,4 +48,4 @@ def play_game():
     else:
         print("\nВы проиграли! Загаданное слово было:", word)
 
-play_game()
+game_start()
