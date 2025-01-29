@@ -1,7 +1,8 @@
-from rock_paper_scissors import rock_paper_scissors_start
+from quiz import play_game
+from guess_the_number import guess_number
 
 games = {
-    "rock_paper_scissors": rock_paper_scissors_start
+    "quiz": play_game, "guess_the_number": guess_number
 }
 if __name__ == "__main__":
     start = True
