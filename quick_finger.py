@@ -1,4 +1,56 @@
-import datetime
+from datetime import datetime
+
+LEVELS = {
+    "1": "Simple text",
+    "2": "Medium level text",
+    "3": "So hard text for breaking fingers"
+}
+
+def choise_level():
+    level = input("Choise level(1, 2, 3):")
+    if level not in LEVELS.keys():
+        print("Wrong level choise!")
+        text = check_input_text()
+    else:
+        text = LEVELS[level]
+    return text
+
+
+def check_input_text(user_text, game_text):
+    if user_text != game_text:
+        print("So bad!")
+    else:
+        print("NICE!")
+
+
+def calculate_result(time):
+    if time.minutes < 1:
+        print("Super good time!")
+    elif 1 < time.minutes < 5:
+        print("Not bad")
+    else:
+        print("So bad!")
+
+
+def start_game():
+
+    print("Hello do u want play? Let's start!")
+    text = choise_level()
+    print(text)
+    start = datetime.now()
+    user_input_text = input("Type your text: ")
+    end = start - datetime.now()
+    calculate_result(end)
+    check_input_text(user_input_text, text)
+
+def quick_fingers():
+    while True:
+        start_game()
+        user_choice = input('Do you want to play again? (yes/no)\n')
+        if user_choice.lower() == 'no':
+            break
+    print('Goodbye!')
+
 
 start = datetime.datetime.now()
 def text_1():
